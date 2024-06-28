@@ -1,0 +1,26 @@
+1. Create GCP account
+2. Create e2-micro instance
+3. Login as root
+4. apt-get install apache2
+5. ap2enmod rewrite
+6. ap2enmod proxy
+7. ap2enmod proxy_http
+8. vim /etc/apache2/sites-available/000-default.conf
+
+<VirtualHost *:80>
+
+  RewriteEngine On
+
+  # Look for "iPhone" in user agent string
+  RewriteCond %{HTTP_USER_AGENT} iphone
+  RewriteRule ^/(.*)$ http://<target-server-ip>/iphone.html [P,L]
+
+  # Look for "Chrome" in user agent string
+  RewriteCond %{HTTP_USER_AGENT} Chrome
+  RewriteRule ^/(.*)$ http://<target-server-ip>/chrome.html [P,L]
+
+</VirtualHost>
+  
+9. systemctl restart apache2
+
+   
