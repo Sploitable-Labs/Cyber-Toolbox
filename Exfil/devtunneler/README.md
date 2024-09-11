@@ -1,5 +1,10 @@
 # PoC Using devtunnels
 
+## What does it do?
+It runs a python webshell on the device where the script is executed. It then binds an anonymous devtunnel to the same port and emails you the URL of the devtunnel. YOu can then open the link in a browser and access the webshell form anywhere.
+
+The script forces "device code" authenication with GitHUb, scrapes the 2FA code and emails it to you so that YOU can authorize the creation of the a devtunnel - even if the script is executed from another macchine :) ...effectively bypassing the authentication sfety mechanism.
+
 ## Setup Part 1
 Deploy tunneler.js as using Google App Script as a webhook
 
@@ -18,7 +23,6 @@ In PowerShell run `.\tunneler.ps1`
 If you don't already have a copy of devtunnel.exe it will download a fresh copy from Microsoft. This can take a while as its about 22MB!
 
 Check you email inbox. You will get a 2FA code and a link. Use the code to sign-in to GitHub.
-This will allow YOU to authenticate the creation of the tunnel, even if the script is executed from another macchine :)
 Once the tunnel is established you will recieve a second email with a hyperlink to the tunnel.
 The link will connect you through to the webshell.
 
