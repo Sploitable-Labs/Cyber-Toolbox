@@ -6,7 +6,7 @@ It runs a python webshell on the device where the script is executed. It then bi
 The script forces "device code" authenication with GitHub, scrapes the 2FA code and emails it to you so that YOU can authorize the creation of a devtunnel - even if the script is executed from another machine :) effectively bypassing the authentication safety mechanism.
 
 ## Setup Part 1
-Deploy tunneler.js using [Google App Script](https://script.google.com/home) as a webhook
+Deploy tunneler.js using [Google App Script](https://script.google.com/home) as a webhook. This script handles POST requests from tunneler.ps1 and emails you the contents.
 
 Note down the URL of the web hook.
 
