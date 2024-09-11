@@ -8,7 +8,7 @@ The script forces "device code" authenication with GitHub, scrapes the 2FA code 
 ## Setup Part 1
 Deploy tunneler.js using [Google App Script](https://script.google.com/home) as a webhook. This script handles POST requests from tunneler.ps1 and emails you the contents.
 
-Note down the URL of the web hook.
+Note down the URL of the webhook.
 
 ## Setup Part 2
 
