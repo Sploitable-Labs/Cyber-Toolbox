@@ -3,7 +3,7 @@
 ## What does it do?
 It runs a python webshell on the device where the script is executed. It then binds an anonymous devtunnel to the same port and emails you the URL of the devtunnel. You can then open the link in a browser and access the webshell from anywhere.
 
-The script forces "device code" authenication with GitHUb, scrapes the 2FA code and emails it to you so that YOU can authorize the creation of the a devtunnel - even if the script is executed from another macchine :) ...effectively bypassing the authentication sfety mechanism.
+The script forces "device code" authenication with GitHub, scrapes the 2FA code and emails it to you so that YOU can authorize the creation of the a devtunnel - even if the script is executed from another macchine :) ...effectively bypassing the authentication sfety mechanism.
 
 ## Setup Part 1
 Deploy tunneler.js as using Google App Script as a webhook
