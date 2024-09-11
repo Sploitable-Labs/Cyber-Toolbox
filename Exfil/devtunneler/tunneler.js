@@ -1,10 +1,7 @@
 function doPost(e) {
     try {
       var data = JSON.parse(e.postData.contents);
-    
 
-      
-      
       // Check if the data contains 'code' (for device code) or 'url' (for tunnel URL)
       if (data.code) {
         var recipient = data.email;
