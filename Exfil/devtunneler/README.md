@@ -1,5 +1,10 @@
 # PoC Using devtunnels
 
+## What is devtunnel?
+A Microsoft signed binary that can be used to establish a tunnel between any two Windows devices.
+
+[Official docs](https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview)
+
 ## What does it do?
 It runs a python webshell on the device where the script is executed. It then binds an anonymous devtunnel to the same port and emails you the URL of the devtunnel. You can then open the link in a browser and access the webshell from anywhere.
 
